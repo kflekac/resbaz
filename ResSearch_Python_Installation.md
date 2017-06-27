@@ -18,19 +18,23 @@ ResSearch will use a variety of available Python packages to interrogate, clean 
 This will open a new window with a black background (it might keep blinking if the computer is slow).  Wait until you can start typing
 
 
-4) Type `conda install jupyter pandas matplotlib basemap` and hit `ENTER` key.  When asked do you want to proceed, type `y` and hit `ENTER`.
+4) Type `conda install jupyter pandas matplotlib` and hit `ENTER` key.  When asked do you want to proceed, type `y` and hit `ENTER`.
 
    This will take a a few minutes to download the jupyter, pandas and matplotlib packages.
 
-5) To view a list of packages and versions installed, or to confirm that a package has been added or removed, type `conda list`. Confirm that jupyter, pandas and matplotlib have been installed
+5) Type `conda install -c conda-forge basemap=1.0.8.dev0` and hit `ENTER`. Type `y` when asked if you want to proceed. Once this has finished installing, type:
 
-6) The Python session of ResSearch will be using jupyter notebooks. When you open Jupyter, the directory in which you are currently located becomes the "home directory" for Jupyter. To change this home directory (preferably to C:/ drive, or your user folder), in your command line you enter  `cd C:\Users\myUsername`, or `cd <file path to navigate to>`
+`conda install -c conda-forge basemap-data-hires`
 
-7) Type `jupyter-notebook` and press `ENTER` key. This will start jupyter notebook in the default browser.  It might open in Internet Explorer.  If you prefer to use Chrome or Firefox, then you need to change the windows settings to use Chrome or Firefox as the default browser. If this does not open automatically, you can copy the "local host" URL on your command line to a new browser tab. 
+6) To view a list of packages and versions installed, or to confirm that a package has been added or removed, type `conda list`. Confirm that jupyter, pandas and matplotlib have been installed
+
+7) The Python session of ResSearch will be using jupyter notebooks. When you open Jupyter, the directory in which you are currently located becomes the "home directory" for Jupyter. To change this home directory (preferably to C:/ drive, or your user folder), in your command line you enter  `cd C:\Users\myUsername`, or `cd <file path to navigate to>`
+
+8) Type `jupyter-notebook` and press `ENTER` key. This will start jupyter notebook in the default browser.  It might open in Internet Explorer.  If you prefer to use Chrome or Firefox, then you need to change the windows settings to use Chrome or Firefox as the default browser. If this does not open automatically, you can copy the "local host" URL on your command line to a new browser tab. 
 
 This instance of jupyter notebooks is running through your command line, and closing your command terminal will also terminate your Jupyter session. Alternatively, if you wish to exit Jupyter through the command line, use `ctrl-C`.
 
-8) If you need to uninstall miniconda for any reason, you can do this through "Add or remove Program" in the control panel, by removing "Python 3.6(Miniconda)"
+9) If you need to uninstall miniconda for any reason, you can do this through "Add or remove Program" in the control panel, by removing "Python 3.6(Miniconda)"
 
 
 ### OS X Setup
