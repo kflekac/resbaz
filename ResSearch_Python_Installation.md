@@ -70,7 +70,9 @@ After you install Python, try running an instance of jupyter notebooks. In the f
 
 `import pandas as pd`
 
-`import matplotlib.pyplot as plt`
+`import matplotlib.pyplot as plt
+
+from mpl_toolkits.basemap import Basemap`
 
 If this produces an error, please try uninstalling and re-installing Python according to the previous instructions. If this doesn't fix the issue, please either:
 + Send me an email at kflekac.resplat@gmail.com before the event, or
