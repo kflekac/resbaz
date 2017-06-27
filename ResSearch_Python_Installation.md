@@ -30,7 +30,7 @@ This will open a new window with a black background (it might keep blinking if t
 
 This instance of jupyter notebooks is running through your command line, and closing your command terminal will also terminate your Jupyter session. Alternatively, if you wish to exit Jupyter through the command line, use `ctrl-C`.
 
-8) If you need to uninstall miniconda for any reason, you can do this through "Add or remove Program" in the control panel, by removing "Python 2.7(Miniconda)"
+8) If you need to uninstall miniconda for any reason, you can do this through "Add or remove Program" in the control panel, by removing "Python 3.6(Miniconda)"
 
 
 ### OS X Setup
