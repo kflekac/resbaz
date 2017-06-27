@@ -18,8 +18,8 @@ ResSearch will use a variety of available Python packages to interrogate, clean 
 This will open a new window with a black background (it might keep blinking if the computer is slow).  Wait until you can start typing
 
 
-4) Type `conda install jupyter pandas matplotlib` and hit `ENTER` key.  When asked do you want to proceed, type `y` and hit `ENTER`.
-   
+4) Type `conda install jupyter pandas matplotlib basemap` and hit `ENTER` key.  When asked do you want to proceed, type `y` and hit `ENTER`.
+
    This will take a a few minutes to download the jupyter, pandas and matplotlib packages.
 
 5) To view a list of packages and versions installed, or to confirm that a package has been added or removed, type `conda list`. Confirm that jupyter, pandas and matplotlib have been installed
@@ -45,7 +45,7 @@ This instance of jupyter notebooks is running through your command line, and clo
 
 NOTE: If you see an error message, check to see that you are logged into the same user account that you used to install Anaconda or Miniconda, and that you have closed and re-opened the terminal window after installing it.
 
-4) Type `conda install jupyter pandas matplotlib` and hit `ENTER` key.  When asked do you want to proceed, type `y` and hit `ENTER`.
+4) Type `conda install jupyter pandas matplotlib basemap` and hit `ENTER` key.  When asked do you want to proceed, type `y` and hit `ENTER`.
 
 5) To view a list of packages and versions installed, or to confirm that a package has been added or removed, type `conda list`. Confirm that jupyter, pandas and matplotlib have been installed
 
