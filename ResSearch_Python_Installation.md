@@ -60,6 +60,23 @@ This instance of Jupyter Notebooks is running through your command line, and clo
 You may also edit ~/.bash_profile and remove the miniconda directory from your PATH environment variable, and remove the hidden .condarc file and .conda and .continuum directories which may have been created in the home directory with: `rm -rf ~/.condarc ~/.conda ~/.continuum`
 
 
+## After Installation
+
+After you install Python, try running an instance of jupyter notebooks. In the first code box, trying running the following commands:
+
+`import pandas as pd`
+
+`import matplotlib.pyplot as plt`
+
+If this produces an error, please try uninstalling and re-installing Python according to the previous instructions. If this doesn't fix the issue, please either:
++ Send me an email at kflekac.resplat@gmail.com before the event, or
++ Visit Hacky Hour this Thursday 29th at Tsubu Bar from 3-4pm, or
++ Speak to me or one of our helpers at the beginning of the event
+
+In addition to the previous steps, also download the ResSearch Instructions iPython Notebook present in the https://github.com/kflekac/resbaz/, as well as the pedestrian counts data available at https://github.com/resbaz/pedestriancounts. Make sure that both of these files are located within the same folder on your computer.
+
+
+
 ```python
 
 ```
