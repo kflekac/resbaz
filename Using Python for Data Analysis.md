@@ -5,7 +5,7 @@ This first session of ResSearch will be focused on the exploration, cleaning and
 
 ## Learning objectives
 
-Thorughout this session we're going to be teaching you a range of tools and skills related to cleaning, manipulation and visualising large datasets. Using the pandas package, we can read in and manipulate large spreadsheets of data, and matplotlib lets you visualise these datasets in a useable, customisable format.
+Throughout this session we're going to be teaching you a range of tools and skills related to cleaning, manipulation and visualising large datasets. Using the pandas package, we can read in and manipulate large spreadsheets of data, and matplotlib lets you visualise these datasets in a useable, customisable format.
 
 The three sections I'll be taking you through today are:
 
@@ -17,7 +17,7 @@ The three sections I'll be taking you through today are:
 
 ## Setting Up
 
-First, we need to import Python's *pandas*, *matplotlib* and *numpy* packages, and then use inline plotting "magic" command so that all plots generated will appear within this notebook instead of in a new browser tab.
+First, we need to import Python's *pandas*, *matplotlib* and *numpy* packages, and then use inline plotting "magic" command so that all plots generated will appear within this notebook instead of in a new browser tab. If the Basemap package doesn't work for you, don't stress too much - this package specifically deals with plotting data on top of maps, which isn't necessary for everyone to learn.
 
 
 ```python
@@ -823,11 +823,17 @@ Now that we have a research question to explore, it's time to look at how we mig
 
 This section will teach you the basics of plotting within matplotlib. This is hardly comprehensive, and there's a wide array of customisability and control with matplotlib and plotly. Feel free to delve into some of user guides and tutorials and questions available on Google and Stack Overflow to learn more about these tools and how to make them work for you.
 
-A reasonably good matplotlib.pyplot tutorial can be found at https://matplotlib.org/users/pyplot_tutorial.html
+Listed here are a range of recommended and useful matplotlib tutorials and documentation, to give you a greater idea of what this package can be used for and how to control some of the customisability. 
 
-The [matplotlib API](https://matplotlib.org/devdocs/api/_as_gen/matplotlib.pyplot.html) contains all of the functions you can call within matplotlib, along with detailed information about how you can use them and their parameters
+- This is a [matplotlib beginner's guide](https://matplotlib.org/users/beginner.html). The [screenshots](https://matplotlib.org/users/screenshots.html) section of this guide gives you a basic overview of the types of plots you can generate using pyplot.
+- The beginner's guide also contains a [matplotlib.pyplot tutorial](https://matplotlib.org/users/pyplot_tutorial.html)
+- This is a [summary of the pyplot plotting comamnds](https://matplotlib.org/api/pyplot_summary.html)
 
-A handy "quick guide" to the different kinds of plotting functions within pyplot can also be found at the [pyplot API](https://matplotlib.org/api/pyplot_api.html)
+- This section of the [pandas documentation](http://pandas.pydata.org/pandas-docs/version/0.15.2/visualization.html) deals with how you can use various visualisation tools with your dataframe
+- The [matplotlib.pyplot API](https://matplotlib.org/api/pyplot_api.html) contains many of the functions and size, colour, and text parameters you can customise within pyplot
+- The [matplotlib API](https://matplotlib.org/devdocs/api/_as_gen/matplotlib.pyplot.html) contains all of the functions you can call within matplotlib, along with detailed information about how you can use them and their parameters
+- 
+
 
 Let's begin by trying to plot the seasons data
 
@@ -955,7 +961,8 @@ plt.show()
 #### Scatter Plot
 
 Scatter plots also allow you observe the relationship between two conditions within your data. This works best when you have two continuous variables. With the use of colours and shapes, you can also observe how certain conditions cluster throughout this relationship.
-
+ A simple and useful guide to beginner's scatterplotting can be found at http://chris35wills.github.io/courses/PythonPackages_matplotlib/matplotlib_scatter/
+ 
 
 ```python
 pdsn.plot(kind='scatter', x = "Counts", y = "Month")
@@ -997,13 +1004,13 @@ plt.show()
 
 #### Longitude and Latitude Plotting using Basemap
 
-Plotting UK Median House prices for 2015 onto a map of UK based on postcode:
+Basemap is a matplotlib toolkit package that allows you to plot geographical data onto a worldmap. This can be extremely useful for examining locational trends, observing the distribution and clustering of data (for example, disease outbreaks), and a range of other uses. 
 
-http://www.datadependence.com/2016/06/creating-map-visualisations-in-python/
+A handy beginner's guide to basemap ploting can be found at http://introtopython.org/visualization_earthquakes.html. For those who had issues installing basemap, this section also contains a "how to install" module that may help.
 
-Another tutorial:
+Another useful basemap tutorial can be found at https://peak5390.wordpress.com/2012/12/08/matplotlib-basemap-tutorial-plotting-points-on-a-simple-map/. I would recommend that you view this tutorial to gain a greater understanding of how you might plot data across multiple countries.
 
-https://peak5390.wordpress.com/2012/12/08/matplotlib-basemap-tutorial-plotting-points-on-a-simple-map/
+For this next section, we will be using the data and code from a [basemap tutorial](http://www.datadependence.com/2016/06/creating-map-visualisations-in-python/) where the Median UK House prices in 2015. This tutorial does require specific "shapefile"-formatted data to draw the postcode boundaries on the UK map. Unfortunately we do not have this file, but have left in that section of the tutorial regardless to demonstrate how one might use such data. 
 
 
 ```python
@@ -1035,7 +1042,9 @@ def plot_area(pos):
 new_areas.pos.apply(plot_area)
 
 
-#reading in a shapefile of the UK postcode boundaries
+#reading in a shapefile of the UK postcode boundaries - NOTE: we don't actually have this file,
+    #so this section will throw an error. If you plan to plot data on your map and require suburb boundaries, etc, then 
+    # you'll need to find the appropriate shapefile.
 m.readshapefile('data/uk_postcode_bounds/Areas', 'areas')
 
 
@@ -1078,19 +1087,6 @@ Design your own research question, and interrogate and plot your data to investi
 ```
 
 
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
 
 ## Summary
 
@@ -1100,6 +1096,4 @@ Python is a very versatile tool, and can go much further than what we've shown y
 
 Using a programming language allows you to investigate much larger data than you can do by hand or by eye, and the customisability of the plotting tools makes it ideal for generating useful and professional images  ideal for publication.
 
-```python
 
-```
