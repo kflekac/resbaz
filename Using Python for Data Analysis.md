@@ -1100,14 +1100,6 @@ Python is a very versatile tool, and can go much further than what we've shown y
 
 Using a programming language allows you to investigate much larger data than you can do by hand or by eye, and the customisability of the plotting tools makes it ideal for generating useful and professional images  ideal for publication.
 
-- going to be around throughout event 
-- come to hacky hour
-- heres my twitter/facebook group
-    - follow for more details and keep abreast of events
-- beginner's workshop
-- See Tim for stats
-
-
 ```python
 
 ```
