@@ -1096,4 +1096,13 @@ Python is a very versatile tool, and can go much further than what we've shown y
 
 Using a programming language allows you to investigate much larger data than you can do by hand or by eye, and the customisability of the plotting tools makes it ideal for generating useful and professional images  ideal for publication.
 
+Follow us on Twitter to keep up-to-date on new and up-coming trainings
+
+- [@kflekac](https://twitter.com/kflekac),
+- [@ResBaz](https://twitter.com/resbaz),
+- [@ResPlat](https://twitter.com/resplat),
+
+There's also a reasonably new facebook group, called "Data Wrangling with Python" where you can post your python problems, cool things you've done, and stay apprised of new trainings coming up as well.
+
+Also remember that if you're having problems, Research Platforms runs a weekly Hacky Hour, where anybody and everybody is able to enquire about coding and programming problems in a variety of tools. Every Thursday from 3-4pm, at the large table in Tsubu Bar.
 
